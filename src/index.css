@@ -1,13 +1,180 @@
+/* General styles */
 body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  background-color: #ffffff;
+  color: #333333;
+  min-height: 100vh;
+}
+
+/* Dark mode styles */
+.app.dark {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-bottom: 2px solid #ccc;
+}
+
+.navbar-light {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.navbar-dark {
+  background-color: #222;
+  color: #f0f0f0;
+}
+
+.navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-nav .nav-link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link.active {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  color: #0d6efd;
+  border: 2px solid #0d6efd;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.btn-success {
+  background-color: #198754;
+  color: white;
+  border-radius: 20px;
+}
+
+.btn-success:hover {
+  background-color: #146c43;
+}
+
+/* Cards */
+.card {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  background-color: white;
+  color: #333;
+}
+
+.app.dark .card {
+  background-color: #2b2b2b;
+  color: #f0f0f0;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card-img-top {
+  width: 100%;
+  object-fit: cover;
+  max-height: 200px;
+}
+
+/* Forms */
+input, textarea {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #0d6efd;
+}
+
+.app.dark input, .app.dark textarea {
+  background-color: #444;
+  border-color: #666;
+  color: #f0f0f0;
+}
+
+/* Footer */
+footer {
+  padding: 1.5rem 0;
+  text-align: center;
+  background-color: #f8f9fa;
+  color: #555;
+  margin-top: 3rem;
+}
+
+.app.dark footer {
+  background-color: #222;
+  color: #ccc;
+}
+
+/* Utility */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.py-4 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
