@@ -9,9 +9,9 @@ function Navigation({ darkMode, setDarkMode }) {
       <NavLink className="navbar-brand" to="/">Bousy Café</NavLink>
       <ul className="navbar-nav d-flex flex-row gap-3">
         <li className="nav-item"><NavLink className="nav-link" to="/">Home</NavLink></li>
+        <li className="nav-item"><NavLink className="nav-link" to="AboutUs">AboutUS</NavLink></li>
         <li className="nav-item"><NavLink className="nav-link" to="/menu">Menu</NavLink></li>
         <li className="nav-item"><NavLink className="nav-link" to="/TeamSection">TeamSection</NavLink></li>
-        <li className="nav-item"><NavLink className="nav-link" to="AboutUs">AboutUS</NavLink></li>
         <li className="nav-item"><NavLink className="nav-link" to="/contact">Contact</NavLink></li>
       </ul>
       <button className="btn btn-outline-primary ms-auto" onClick={toggleMode}>
