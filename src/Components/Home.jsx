@@ -1,18 +1,29 @@
-// pages/Home.jsx
 import React from 'react';
+import { Link } from 'react-router-dom';
+import '../index.css';
 
 function Home() {
   return (
-    <div className="container text-center py-5">
-      <h1>Welcome to Bousy Café ☕</h1>
-            <button className="btn btn-success">Test Bootstrap</button>
-      <p className="lead mb-4">Where tradition meets flavor</p>
-      <img
-        src="https://cdn.pixabay.com/photo/2016/11/29/03/53/coffee-1869493_1280.jpg"
-        alt="Cafe ambiance"
-        className="img-fluid rounded shadow-sm"
-        style={{ maxHeight: '400px' }}
-      />
+    <div className="home-hero">
+      <div className="container text-center home-overlay py-5">
+        <h1>Welcome to Bousy Café ☕</h1>
+        <p className="lead mb-4">Where tradition meets flavor</p>
+        <Link to="/menu" className="btn btn-success">
+          Check Our Menu
+        </Link>
+
+        <Link to="/TeamSection" className="btn btn-outline-light m-2">
+          Meet the Team
+        </Link>
+
+        <Link to="/about" className="btn btn-outline-light m-2">
+          About Us
+        </Link>
+
+        <Link to="/contact" className="btn btn-outline-light m-2">
+          Contact
+        </Link>
+      </div>
     </div>
   );
 }

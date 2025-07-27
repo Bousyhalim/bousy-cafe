@@ -1,0 +1,11 @@
+[
+  { "id": 1, "name": "Turkish coffee", "price": 4, "img": "https://cdn.pixabay.com/photo/2021/07/11/01/20/turkish-coffee-6402691_1280.jpg" },
+  { "id": 2, "name": "Americano", "price": 4, "img": "https://cdn.pixabay.com/photo/2017/08/07/01/16/black-2598314_1280.jpg" },
+  { "id": 3, "name": "Cappuccino", "price": 4, "img": "https://cdn.pixabay.com/photo/2023/11/14/17/58/coffee-8388244_1280.jpg" },
+  { "id": 4, "name": "Latte", "price": 4, "img": "https://cdn.pixabay.com/photo/2014/08/29/14/58/coffee-431121_1280.jpg" },
+  { "id": 5, "name": "Espresso", "price": 4, "img": "https://cdn.pixabay.com/photo/2019/07/13/11/44/coffee-4334647_1280.jpg" },
+  { "id": 6, "name": "Croissant", "price": 3, "img": "https://cdn.pixabay.com/photo/2021/11/09/07/21/pastry-6780834_1280.jpg" },
+  { "id": 7, "name": "Club Sandwich", "price": 6, "img": "https://cdn.pixabay.com/photo/2018/07/14/21/30/club-sandwich-3538455_1280.jpg" },
+  { "id": 8, "name": "Carrot Cake", "price": 5, "img": "https://cdn.pixabay.com/photo/2019/07/17/09/18/carrot-4343497_1280.jpg" },
+  { "id": 9, "name": "Cheesecake", "price": 5, "img": "https://cdn.pixabay.com/photo/2019/07/21/19/52/cheesecake-4353495_1280.jpg" }
+]

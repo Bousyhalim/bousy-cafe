@@ -5,8 +5,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './Components/Navigation';
 import Home  from './Components/Home'
 import Menu  from './Components/Menu'
+import TeamSection  from './Components/TeamSection'
+import AboutUs  from './Components/AboutUs'
 import Contact  from './Components/Contact'
-import Subscribe  from './Components/Subscribe'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false); // Dark mode state
@@ -18,8 +19,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
+          <Route path="/TeamSection" element={<TeamSection />} />
+          <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/subscribe" element={<Subscribe />} />
         </Routes>
       </Router>
     </div>

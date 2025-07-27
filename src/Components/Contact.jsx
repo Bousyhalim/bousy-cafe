@@ -2,23 +2,33 @@
 import React, { useState } from 'react';
 
 function Contact() {
-  const [email, setEmail] = React.useState('');
-  const [submitted, setSubmitted] = React.useState(false);
+  const [email, setEmail] = useState('');
+  const [submitted, setSubmitted] = useState(false);
 
   const handleSubscribe = (e) => {
     e.preventDefault();
-    if(email.trim()) {
+    if (email.trim()) {
       setSubmitted(true);
       setEmail('');
     }
   };
 
   return (
-    <div className="container py-5" style={{ maxWidth: '600px' }}>
+    <div
+      className="container py-5"
+      style={{
+        maxWidth: '600px',
+        backgroundColor: '#7B3F00', // Coffee color
+        color: 'white',
+        borderRadius: '12px',
+        padding: '20px',
+      }}
+    >
       <h2 className="mb-4">Contact Us</h2>
       <p><strong>Email:</strong> contact@bousycafe.com</p>
       <p><strong>Phone:</strong> +971-50-1234567</p>
       <p><strong>Address:</strong> Deira, Dubai, UAE</p>
+
       <div className="mb-4">
         <iframe
           title="Cafe Location"
@@ -38,10 +48,10 @@ function Contact() {
           className="form-control mb-2"
           placeholder="Enter your email"
           value={email}
-          onChange={e => setEmail(e.target.value)}
+          onChange={(e) => setEmail(e.target.value)}
           required
         />
-        <button type="submit" className="btn btn-success w-100">Subscribe</button>
+        <button type="submit" className="btn btn-light w-100">Subscribe</button>
       </form>
 
       {submitted && (
@@ -49,6 +59,19 @@ function Contact() {
           Thank you for subscribing to Bousy Café! 🌟
         </div>
       )}
+
+      <h3 className="mt-5">Follow Us</h3>
+      <ul>
+        <li>
+          <a href="#" style={{ color: 'white' }}>Instagram</a>
+        </li>
+        <li>
+          <a href="#" style={{ color: 'white' }}>Bluesky</a>
+        </li>
+        <li>
+          <a href="#" style={{ color: 'white' }}>TikTok</a>
+        </li>
+      </ul>
     </div>
   );
 }

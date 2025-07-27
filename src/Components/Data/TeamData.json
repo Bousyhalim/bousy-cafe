@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "imgFilePath": "src/Components/Img/Staff 1.png",
+    "name": "Amanda Adams",
+    "role": "Head Barista",
+    "bio": "The coolest coffee maker you've ever found. She knows how to wow her clients with a cup of fresh coffee."
+  },
+  {
+    "id": 2,
+    "imgFilePath": "src/Components/Img/Staff 2.png",
+    "name": "John Smith",
+    "role": "Chef",
+    "bio": "He creates the best mood in the eCommerce Website Template Cafe and makes you happy."
+  },
+  {
+    "id": 3,
+    "imgFilePath": "/img/Staff 3.png",
+    "name": "Ashley Cage",
+    "role": "Purchasing Officer",
+    "bio": "She knows exactly what you want and will offer the coffee for your taste."
+  }
+]
