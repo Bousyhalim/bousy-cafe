@@ -29,9 +29,9 @@ function Menu() {
   };
 
   const addButtonStyle = {
-    backgroundColor: '#28a745', 
+    backgroundColor: 'rgba(255, 255, 255, 0.3)',
     borderColor: '#28a745',
-    color: 'white',
+    color: 'black',
     marginTop: 'auto',
   };
 
